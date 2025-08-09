@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Bandhu</title>
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- Font  -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+
+    <!-- Fontawesome link  -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-light.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-regular.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-solid.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-thin.css" />
+    <!-- Fontawesome link  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Header Start  -->
+    <!-- Topbar -->
+    <div class="topbar py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fa-solid fa-location-dot me-1"></i> 30 Road Fratton, India
+                <span class="mx-2">|</span>
+                <i class="fa-solid fa-envelope me-1"></i> contact@example.com
+            </div>
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook-f ms-3"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter ms-2"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-travel navbar-expand-lg bg-white shadow-sm p-0">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="logo" width="100" class="me-2" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tours</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tours.html">Domestic Tour</a></li>
+                            <li><a class="dropdown-item" href="tours.html">Adventure Tour</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Activities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="image-gallery.html">Image Gallery</a></li>
+                            <li><a class="dropdown-item" href="video-gallery.html">Video Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Right side -->
+                <div class="d-flex align-items-center gap-3">
+                    <div class="call-box">
+                        <div class="call-icon">
+                            <i class="fa-regular fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <small>Call Anytime</small><br />
+                            <strong>(69)-868 168</strong>
+                        </div>
+                    </div>
+                    <a href="#" class="search-icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+                    <button class="btn btn-booking" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                        <i class="fa-light fa-calendar-days me-2"></i>Start Booking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black bg-opacity-75 text-white border-0">
+                <div class="modal-body p-0 d-flex">
+                    <!-- Left Side: Image -->
+                    <div class="w-50 d-none d-md-block">
+                        <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                            alt="Travel" class="img-fluid h-100 w-100 object-fit-cover" />
+                    </div>
+
+                    <!-- Right Side: Booking Form -->
+                    <div class="w-100 w-md-50 bg-white text-dark p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="mb-0">Booking Form</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="email@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control" placeholder="+123456789" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Travel Date</label>
+                                <input type="date" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Destination</label>
+                                <input type="text" class="form-control" placeholder="e.g., Bali, Paris" />
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent text-white border-0">
+                <div class="modal-body p-5">
+                    <div class="mb-4">
+                        <h4 class="mb-0 text-center form-head">Search Destinations</h4>
+                        <button type="button" class="btn-close btn-close-cs" data-bs-dismiss="modal"
+                            aria-label="Close">Close</button>
+                    </div>
+
+                    <form>
+                        <div class="mb-4 position-relative overflow-hidden">
+                            <input type="text" id="search" class="form-control form-search form-control-lg"
+                                placeholder="Enter destination name..." />
+                            <button type="submit" class="btn position-absolute right-0 search-button">Search</button>
+                        </div>
+                    </form>
+
+                    <!-- Swiper -->
+                    <div class="swiper destination-slider2 mt-4">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1: Goa -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/871060/pexels-photo-871060.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Goa" />
+                                </div>
+                                <p class="mt-2 text-white">Goa</p>
+                            </div>
+
+                            <!-- Slide 2: Jaipur -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Jaipur" />
+                                </div>
+                                <p class="mt-2 text-white">Jaipur</p>
+                            </div>
+
+                            <!-- Slide 3: Manali -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1188172/pexels-photo-1188172.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Manali" />
+                                </div>
+                                <p class="mt-2 text-white">Manali</p>
+                            </div>
+
+                            <!-- Slide 4: Leh-Ladakh -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Leh-Ladakh" />
+                                </div>
+                                <p class="mt-2 text-white">Leh-Ladakh</p>
+                            </div>
+
+                            <!-- Slide 5: Kerala -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1007424/pexels-photo-1007424.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Kerala" />
+                                </div>
+                                <p class="mt-2 text-white">Kerala</p>
+                            </div>
+
+                            <!-- Slide 6: Varanasi -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1829980/pexels-photo-1829980.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Varanasi" />
+                                </div>
+                                <p class="mt-2 text-white">Varanasi</p>
+                            </div>
+
+                            <!-- Slide 7: Rishikesh -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Rishikesh" />
+                                </div>
+                                <p class="mt-2 text-white">Rishikesh</p>
+                            </div>
+
+                            <!-- Slide 8: Agra -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1487009/pexels-photo-1487009.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Agra" />
+                                </div>
+                                <p class="mt-2 text-white">Agra</p>
+                            </div>
+
+                            <!-- Slide 9: Udaipur -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1829985/pexels-photo-1829985.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Udaipur" />
+                                </div>
+                                <p class="mt-2 text-white">Udaipur</p>
+                            </div>
+
+                            <!-- Slide 10: Darjeeling -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Darjeeling" />
+                                </div>
+                                <p class="mt-2 text-white">Darjeeling</p>
+                            </div>
+                        </div>
+
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End  -->
+
+    <!-- Inner Banner Start  -->
+    <section class="cms-banner position-relative">
+        <div class="cms-bann-img position-relative">
+            <img src="images/breadcrumb.jpg" alt="Inner Banner">
+        </div>
+        <div class="breadcrumb-cover py-3">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-divider"><i class="fa-regular fa-chevron-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Contact Us </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Inner Banner End  -->
+
+    <!-- Contact Section -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get in Touch</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card p-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white sec-space pb-0" style="background-color: #251200;">
+        <div class="container">
+            <div class="row align-items-start g-4">
+                <!-- Logo & Social -->
+                <div class="col-md-12 border-bottom">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="social-media d-flex gap-2">
+                            <a href="#" class="text-white d-inline-block me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-white d-inline-block me-2">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="text-white d-inline-block me-2">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-white d-inline-block">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-md-2 quick-link">
+                    <h5 class="fw-bold mb-3">Tours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Domestic Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Adventure Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Educational Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Historical Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Office Tour</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="col-md-2 quick-link">
+                    <h5 class="fw-bold mb-3">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="about.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree"></i> About</a></li>
+                        <li class="mb-3"><a href="image-gallery.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Image
+                                Gallery</a></li>
+                        <li class="mb-3"><a href="video-gallery.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Video
+                                Gallery</a></li>
+                        <li class="mb-3"><a href="blog.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Latest News</a>
+                        </li>
+                        <li class="mb-3"><a href="contact.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 contact-footer">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <a href="https://maps.app.goo.gl/GnkgUzHHfmc7b66m9" class="mb-3 d-block"><i
+                            class="fas fa-location-dot text-warning me-2"></i>Ramkrishnapur Md. K C Road,
+                        Kolkata 700111, West Bengal, India</a>
+                    <a href="tel:8240086098" class="mb-3 d-block">
+                        <i class="fas fa-phone text-warning me-2"></i>+91 82400 86098
+                    </a>
+                    <a href="tel:8583899808" class="mb-3 d-block">
+                        <i class="fas fa-phone text-warning me-2"></i>+91 85838 99808
+                    </a>
+                    <a href="mailto:admin@travelbondhu.com" class="d-block">
+                        <i class="fas fa-envelope text-warning me-2"></i>admin@travelbondhu.com
+                    </a>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <div class="bg-dark p-4 rounded-4">
+                        <h6 class="text-white mb-3">Signup for our latest news<br />& articles</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email address" required />
+                                <button class="btn btn-warning" type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="privacy" required>
+                                <label class="form-check-label small text-white" for="privacy">
+                                    <i class="fas fa-check-circle text-warning me-1"></i>I agree to the privacy policy.
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy-right">
+            All right Resrved.
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

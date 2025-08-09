@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Bondhu</title>
+
+  <!-- Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <!-- Font  -->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/fancybox.css" />
+
+  <!-- Fontawesome link  -->
+  <link rel="stylesheet" href="css/fontawesome/css/all.css" />
+  <link rel="stylesheet" href="css/fontawesome/css/sharp-light.css" />
+  <link rel="stylesheet" href="css/fontawesome/css/sharp-regular.css" />
+  <link rel="stylesheet" href="css/fontawesome/css/sharp-solid.css" />
+  <link rel="stylesheet" href="css/fontawesome/css/sharp-thin.css" />
+  <!-- Fontawesome link  -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Header Start  -->
+  <!-- Topbar -->
+  <div class="topbar py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="fa-solid fa-location-dot me-1"></i> Ramkrishnapur, Kolkata-700111, India
+        <span class="mx-2">|</span>
+        <i class="fa-solid fa-envelope me-1"></i> admin@travelbondhu.com
+      </div>
+      <div>
+        <a href="#"><i class="fa-brands fa-facebook-f ms-3"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter ms-2"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram ms-2"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-travel navbar-expand-lg bg-white shadow-sm p-0">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="logo" width="100" class="me-2" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tours</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tours.html">Domestic Tour</a></li>
+              <li><a class="dropdown-item" href="tours.html">Adventure Tour</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destination.html">Destinations</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Activities</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="image-gallery.html">Image Gallery</a></li>
+              <li><a class="dropdown-item" href="video-gallery.html">Video Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="blogs.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Right side -->
+        <div class="d-flex align-items-center gap-3">
+          <div class="call-box">
+            <div class="call-icon">
+              <i class="fa-regular fa-phone-volume"></i>
+            </div>
+            <div>
+              <small>Call Anytime</small><br />
+              <strong>(69)-868 168</strong>
+            </div>
+          </div>
+          <a href="#" class="search-icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fa-regular fa-magnifying-glass"></i>
+          </a>
+          <button class="btn btn-booking" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            <i class="fa-light fa-calendar-days me-2"></i>Start Booking
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Booking Modal -->
+  <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content bg-black bg-opacity-75 text-white border-0">
+        <div class="modal-body p-0 d-flex">
+          <!-- Left Side: Image -->
+          <div class="w-50 d-none d-md-block">
+            <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              alt="Travel" class="img-fluid h-100 w-100 object-fit-cover" />
+          </div>
+
+          <!-- Right Side: Booking Form -->
+          <div class="w-100 w-md-50 bg-white text-dark p-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="mb-0">Booking Form</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="John Doe" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="email@example.com" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input type="text" class="form-control" placeholder="+123456789" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Travel Date</label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Destination</label>
+                <input type="text" class="form-control" placeholder="e.g., Bali, Paris" />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent text-white border-0">
+        <div class="modal-body p-5">
+          <div class="mb-4">
+            <h4 class="mb-0 text-center form-head">Search Destinations</h4>
+            <button type="button" class="btn-close btn-close-cs" data-bs-dismiss="modal"
+              aria-label="Close">Close</button>
+          </div>
+
+          <form>
+            <div class="mb-4 position-relative overflow-hidden">
+              <input type="text" id="search" class="form-control form-search form-control-lg"
+                placeholder="Enter destination name..." />
+              <button type="submit" class="btn position-absolute right-0 search-button">Search</button>
+            </div>
+          </form>
+
+          <!-- Swiper -->
+          <div class="swiper destination-slider2 mt-4">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1: Goa -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/871060/pexels-photo-871060.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Goa" />
+                </div>
+                <p class="mt-2 text-white">Goa</p>
+              </div>
+
+              <!-- Slide 2: Jaipur -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Jaipur" />
+                </div>
+                <p class="mt-2 text-white">Jaipur</p>
+              </div>
+
+              <!-- Slide 3: Manali -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/1188172/pexels-photo-1188172.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Manali" />
+                </div>
+                <p class="mt-2 text-white">Manali</p>
+              </div>
+
+              <!-- Slide 4: Leh-Ladakh -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Leh-Ladakh" />
+                </div>
+                <p class="mt-2 text-white">Leh-Ladakh</p>
+              </div>
+
+              <!-- Slide 5: Kerala -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/1007424/pexels-photo-1007424.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Kerala" />
+                </div>
+                <p class="mt-2 text-white">Kerala</p>
+              </div>
+
+              <!-- Slide 6: Varanasi -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/1829980/pexels-photo-1829980.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Varanasi" />
+                </div>
+                <p class="mt-2 text-white">Varanasi</p>
+              </div>
+
+              <!-- Slide 7: Rishikesh -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Rishikesh" />
+                </div>
+                <p class="mt-2 text-white">Rishikesh</p>
+              </div>
+
+              <!-- Slide 8: Agra -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/1487009/pexels-photo-1487009.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Agra" />
+                </div>
+                <p class="mt-2 text-white">Agra</p>
+              </div>
+
+              <!-- Slide 9: Udaipur -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/1829985/pexels-photo-1829985.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Udaipur" />
+                </div>
+                <p class="mt-2 text-white">Udaipur</p>
+              </div>
+
+              <!-- Slide 10: Darjeeling -->
+              <div class="swiper-slide text-center">
+                <div class="destination-thumb">
+                  <img
+                    src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Darjeeling" />
+                </div>
+                <p class="mt-2 text-white">Darjeeling</p>
+              </div>
+            </div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End  -->
+
+  <!-- Swiper Hero Section -->
+  <section class="hero-section position-relative">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide position-relative">
+          <img src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&h=900"
+            alt="Traveler on paddle board in paradise" class="w-100 img-fluid hero-image" />
+          <div class="hero-text-content position-absolute top-50 start-0 translate-middle-y w-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="text-white text-start">
+                    <div class="hero-subtitle text-warning mb-2 wow animate__animated animate__fadeInDown"
+                      data-wow-duration="1.2s">
+                      Escape to Paradise
+                    </div>
+                    <h1 class="hero-title mb-3 display-4 fw-bold wow animate__animated animate__fadeInUp"
+                      data-wow-duration="1.7s">
+                      Explore Untouched Hidden Beach Escapes
+                    </h1>
+                    <button class="btn btn-banner mt-3 wow animate__fadeInUp" data-wow-duration="2s">
+                      Discover More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide position-relative">
+          <img src="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Mountains" class="w-100 img-fluid hero-image" />
+          <div class="hero-text-content position-absolute top-50 start-0 translate-middle-y w-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="text-white text-start">
+                    <div class="hero-subtitle text-warning mb-2 wow animate__fadeInDown" data-wow-duration="1.2s">
+                      Breathe in Adventure
+                    </div>
+                    <h1 class="hero-title mb-3 display-4 fw-bold wow animate__fadeInUp" data-wow-duration="1.7s">
+                      Climb High, Conquer Rugged Mountains
+                    </h1>
+                    <button class="btn btn-banner mt-3 wow animate__fadeInUp" data-wow-duration="2.1s">
+                      Start Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide position-relative">
+          <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            alt="Forest Lake" class="w-100 img-fluid hero-image" />
+          <div class="hero-text-content position-absolute top-50 start-0 translate-middle-y w-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="text-white text-start">
+                    <div class="hero-subtitle text-warning mb-2 wow animate__fadeInDown" data-wow-duration="1.2s">
+                      Calm & Serene
+                    </div>
+                    <h1 class="hero-title mb-3 display-4 fw-bold wow animate__fadeInUp" data-wow-duration="1.7s">
+                      Feel the Calm of Nature
+                    </h1>
+                    <button class="btn btn-banner mt-3 wow animate__fadeInUp" data-wow-duration="2.1s">
+                      Book a Trip
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Destination Section Start -->
+  <section class="sec-space destinations-section">
+    <div class="container me-0">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="section-subtitle">
+            <i class="bi bi-airplane me-2"></i>Destination List
+          </div>
+          <h2 class="section-title">
+            Explore the <br />Beautiful Places<br />Around World
+          </h2>
+          <p class="text-muted mt-3">
+            Flexible classes refers to the process of acquiring is knowledge
+            free.
+          </p>
+          <button class="btn-discover mt-4">Discover More</button>
+        </div>
+
+        <!-- Right Slider -->
+        <div class="col-lg-8">
+          <div class="swiper destinationSwiper">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/2193300/pexels-photo-2193300.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="Italy" />
+                  <span class="badge-listing">5 Places</span>
+                  <div class="destination-info">
+                    <h6>Places In</h6>
+                    <h5>Italy</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/460740/pexels-photo-460740.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="France" />
+                  <span class="badge-listing">3 Places</span>
+                  <div class="destination-info">
+                    <h6>Places In</h6>
+                    <h5>France</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/3601424/pexels-photo-3601424.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="Maldives" />
+                  <span class="badge-listing">3 Places</span>
+                  <div class="destination-info">
+                    <h6>Travel To</h6>
+                    <h5>Maldives</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="Rome" />
+                  <span class="badge-listing">2 Places</span>
+                  <div class="destination-info">
+                    <h6>Travel To</h6>
+                    <h5>Rome</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/460376/pexels-photo-460376.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="Santorini" />
+                  <span class="badge-listing">4 Places</span>
+                  <div class="destination-info">
+                    <h6>Travel To</h6>
+                    <h5>Santorini</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="Thailand" />
+                  <span class="badge-listing">6 Places</span>
+                  <div class="destination-info">
+                    <h6>Travel To</h6>
+                    <h5>Thailand</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 7 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/356830/pexels-photo-356830.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="New York" />
+                  <span class="badge-listing">8 Places</span>
+                  <div class="destination-info">
+                    <h6>City</h6>
+                    <h5>New York</h5>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 8 -->
+              <div class="swiper-slide">
+                <div class="destination-card position-relative">
+                  <img
+                    src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    class="destination-img" alt="Dubai" />
+                  <span class="badge-listing">5 Places</span>
+                  <div class="destination-info">
+                    <h6>Travel To</h6>
+                    <h5>Dubai</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper Navigation -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Destination Section End -->
+
+  <!-- Experience Section Start -->
+  <section class="experience-section sec-space position-relative">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Image Column -->
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div class="main-img-container">
+            <img src="images/left-exp.png" class="w-100" alt="Couple Travel" />
+          </div>
+        </div>
+
+        <!-- Right Content Column -->
+        <div class="col-lg-6 ps-5">
+          <span class="section-subtitle mb-2"><i class="bi bi-airplane me-2"></i>Get to Know Us</span>
+          <h2 class="section-title mb-3">
+            Experience the World with Our Company
+          </h2>
+          <p class="text-muted mb-4">
+            There are many variations of passages of Lorem Ipsum available but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+
+          <div class="row gx-4 gy-3 mb-4">
+            <div class="col-md-6 d-flex gap-3">
+              <div class="icon-box">
+                <img src="images/guide-2.svg" alt="">
+              </div>
+              <div>
+                <h6 class="fw-bold">Friendly Guide</h6>
+                <p class="small text-muted mb-0">
+                  There are many variations of passages of lorem Ipsum.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex gap-3">
+              <div class="icon-box">
+                <img src="images/travel.svg" alt="">
+              </div>
+              <div>
+                <h6 class="fw-bold">Safety Travel</h6>
+                <p class="small text-muted mb-0">
+                  There are many variations of passages of lorem Ipsum.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="row gx-5 pt-4">
+            <div class="col-md-4">
+              <div class="award-box text-center">
+                <div class="award-icon">
+                  <img src="images/award.svg" alt="">
+                </div>
+                <p class="">
+                  Award Winning Agency
+                </p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="award-llisting">
+                <ul class="list-unstyled small mb-0">
+                  <li class="mb-2">
+                    <i class="fas fa-circle-check text-success me-2"></i>
+                    Customizable travel packages available
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-circle-check text-success me-2"></i>
+                    Expert tour leaders with experience
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-circle-check text-success me-2"></i>
+                    Comfortable and safe travel options
+                  </li>
+                  <li>
+                    <i class="fas fa-circle-check text-success me-2"></i>
+                    Hassle-free booking and cancellation
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-explore">Explore More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tajmahal">
+      <img src="images/tajmahal.jpg" alt="">
+    </div>
+  </section>
+  <!-- Experience Section End -->
+
+  <!-- Featured Tours Section Start -->
+  <section class="featured-tours-section sec-space position-relative">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <div class="section-subtitle">
+          <i class="fa-solid fa-plane me-2"></i> Featured Tours
+        </div>
+        <h2 class="section-title">Most Favorite Tour Places in India</h2>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper featured-swiper">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1: Dal Lake -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Dal Lake, Kashmir" />
+                <span class="badge-discount">27% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Dal Lake Shikara Ride</h5>
+                <p class="text-muted small">Enjoy peaceful boat rides with snow-covered mountains in view.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i> <i class="fa-sharp fa-solid fa-star"></i> <i
+                      class="fa-sharp fa-solid fa-star"></i> <i class="fa-sharp fa-solid fa-star"></i> <i
+                      class="fa-sharp fa-solid fa-star-half"></i> 4.5 <span class="text-muted small">(12 Reviews)</span>
+                  </div>
+
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-sharp fa-solid fa-clock me-2"></i> 2 Hours </span>
+                    <span class="user"> <i class="fa-solid fa-users me-2"></i> 1-6 </span>
+                  </div>
+
+                  <div class="location"><i class="fa-sharp fa-solid fa-location-dot me-2"></i> Srinagar, Kashmir</div>
+
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">Now</span>
+                    <div class="price">₹3,499 <del class="text-muted">₹4,799</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Goa Beach -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Goa Beach" />
+                <span class="badge-discount">25% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Sunset at Goa Beach</h5>
+                <p class="text-muted small">Golden sands and stunning sunsets along the Arabian Sea.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i> 5
+                    <span class="text-muted small">(25 Reviews)</span>
+                  </div>
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-regular fa-clock"></i> 1 Day</span>
+                    <span class="user"><i class="fa-solid fa-users"></i> 2-10</span>
+                  </div>
+                  <div class="location"><i class="fa-solid fa-location-dot"></i> Palolem, Goa</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">From</span>
+                    <div class="price">₹6,299 <del class="text-muted">₹8,199</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Kerala Backwaters -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/2309652/pexels-photo-2309652.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Kerala Houseboat" />
+                <span class="badge-discount">30% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Houseboat in Alleppey</h5>
+                <p class="text-muted small">Drift through coconut-lined canals and serene lagoons.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i> 4.5
+                    <span class="text-muted small">(18 Reviews)</span>
+                  </div>
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-regular fa-clock"></i> 2 Days</span>
+                    <span class="user"><i class="fa-solid fa-users"></i> 1–4</span>
+                  </div>
+                  <div class="location"><i class="fa-solid fa-location-dot"></i> Alleppey, Kerala</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">From</span>
+                    <div class="price">₹9,499 <del class="text-muted">₹13,299</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 4: Taj Mahal -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/2090651/pexels-photo-2090651.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Taj Mahal" />
+                <span class="badge-discount">18% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Iconic Taj Mahal Tour</h5>
+                <p class="text-muted small">Marvel at India’s most famous symbol of love.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i> 4.8
+                    <span class="text-muted small">(30 Reviews)</span>
+                  </div>
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-regular fa-clock"></i> Half Day</span>
+                    <span class="user"><i class="fa-solid fa-users"></i> 1–15</span>
+                  </div>
+                  <div class="location"><i class="fa-solid fa-location-dot"></i> Agra, Uttar Pradesh</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">Only</span>
+                    <div class="price">₹2,999 <del class="text-muted">₹3,699</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 5: Jaipur Forts -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/4666752/pexels-photo-4666752.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Jaipur Fort" />
+                <span class="badge-discount">20% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Pink City Forts & Palaces</h5>
+                <p class="text-muted small">Explore Amber Fort and royal heritage of Jaipur.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i> 4.5
+                    <span class="text-muted small">(16 Reviews)</span>
+                  </div>
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-regular fa-clock"></i> 1 Day</span>
+                    <span class="user"><i class="fa-solid fa-users"></i> 4–20</span>
+                  </div>
+                  <div class="location"><i class="fa-solid fa-location-dot"></i> Jaipur, Rajasthan</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">From</span>
+                    <div class="price">₹5,499 <del class="text-muted">₹6,999</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 6: Rishikesh -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/28819289/pexels-photo-28819289.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Rishikesh Aarti and Rafting" />
+                <span class="badge-discount">15% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Ganga Aarti & River Rafting</h5>
+                <p class="text-muted small">Spiritual vibes with adventure on the holy Ganges.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i> 4.8
+                    <span class="text-muted small">(19 Reviews)</span>
+                  </div>
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-regular fa-clock"></i> 2 Days</span>
+                    <span class="user"><i class="fa-solid fa-users"></i> 2–12</span>
+                  </div>
+                  <div class="location"><i class="fa-solid fa-location-dot"></i> Rishikesh, Uttarakhand</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">Save</span>
+                    <div class="price">₹3,999 <del class="text-muted">₹5,299</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 7: Munnar -->
+          <div class="swiper-slide">
+            <div class="tour-card">
+              <div class="card-img-box position-relative">
+                <img
+                  src="https://images.pexels.com/photos/1007426/pexels-photo-1007426.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  class="tour-img" alt="Munnar Tea Gardens" />
+                <span class="badge-discount">22% Off</span>
+                <div class="card-icons">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                </div>
+              </div>
+              <div class="tour-card-body">
+                <h5 class="tour-title">Munnar Tea Estate Trails</h5>
+                <p class="text-muted small">Scenic treks through misty hills and plantations.</p>
+                <div class="card-details mb-3">
+                  <div class="rating">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star-half"></i>
+                    4.4 <span class="text-muted small">(14 Reviews)</span>
+                  </div>
+                  <div class="mb-1 time-member">
+                    <span class="time"><i class="fa-regular fa-clock"></i> 3 Days </span>
+                    <span class="user"><i class="fa-solid fa-users"></i> 2–8 </span>
+                  </div>
+                  <div class="location"><i class="fa-solid fa-location-dot"></i> Munnar, Kerala</div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="price-discount">Only</span>
+                    <div class="price">₹4,299 <del class="text-muted">₹5,499</del></div>
+                  </div>
+                  <button class="btn btn-book-now">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Tours Section End -->
+
+
+  <!-- Tour Types Slider Section -->
+  <section class="tour-types-section sec-space">
+    <div class="container text-center tour-type-container">
+      <span class="section-subtitle"><i class="fa-duotone fa-solid fa-plane me-2"></i> SERVICE</span>
+      <h2 class="section-title">Choose Our Tour Types <br />& Enjoy Now</h2>
+      <!-- Swiper -->
+      <div class="swiper tourTypeSwiper mt-5">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide text-center">
+            <div class="tour-type-card active">
+              <!-- <div class="circle-badge active">01</div> -->
+              <div class="icon inline-block">
+                <img src="images/icons/adventure.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Adventure</h5>
+              <p class="text-gray-500 text-sm">
+                Thrilling outdoor explorations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide text-center">
+            <div class="tour-type-card">
+              <!-- <div class="circle-badge">02</div> -->
+              <div class="icon inline-block">
+                <img src="images/icons/windsurfing.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Windsurfing</h5>
+              <p class="text-gray-500 text-sm">Ride the waves with style.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide text-center">
+            <div class="tour-type-card">
+              <!-- <div class="circle-badge">03</div> -->
+              <div class="icon inline-block">
+                <img src="images/icons/paragliding.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Exploration</h5>
+              <p class="text-gray-500 text-sm">Discover hidden treasures.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide text-center">
+            <div class="tour-type-card">
+              <!-- <div class="circle-badge">04</div> -->
+              <div class="icon inline-block">
+                <img src="images/icons/wildlife.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Wildlife</h5>
+              <p class="text-gray-500 text-sm">
+                Nature & wildlife encounters.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="swiper-slide text-center">
+            <div class="tour-type-card">
+              <!-- <div class="circle-badge">05</div> -->
+              <div class="icon inline-block">
+                <img src="images/icons/campfire.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Fire Camp</h5>
+              <p class="text-gray-500 text-sm">Soar above landscapes.</p>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="swiper-slide text-center">
+            <div class="tour-type-card">
+              <!--  <div class="circle-badge">06</div> -->
+              <div class="icon inline-block">
+                <img src="images/icons/homestay.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Homestay</h5>
+              <p class="text-gray-500 text-sm">Live like a local.</p>
+            </div>
+          </div>
+
+          <!-- Slide 7 -->
+          <!-- <div class="swiper-slide text-center px-3">
+            <div class="tour-type-card">
+              <div class="circle-badge">07</div>
+              <div class="icon inline-block">
+                <img src="images/icons/adventure.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">Relaxation</h5>
+              <p class="text-gray-500 text-sm">
+                Peaceful & stress-free travel.
+              </p>
+            </div>
+          </div> -->
+
+          <!-- Slide 8 -->
+          <!-- <div class="swiper-slide text-center px-3">
+            <div class="tour-type-card">
+              <div class="circle-badge">08</div>
+              <div class="icon inline-block">
+                <img src="images/icons/adventure.svg" alt="">
+              </div>
+              <h5 class="font-semibold text-lg mb-1">City Tour</h5>
+              <p class="text-gray-500 text-sm">Urban adventures await.</p>
+            </div>
+          </div> -->
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="py-5">
+    <div class="container text-center">
+      <span class="section-subtitle"><i class="fa-duotone fa-solid fa-plane me-2"></i> Testimonial</span>
+      <h2 class="section-title">See what they are <br />talking about?</h2>
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="https://i.pravatar.cc/150?img=12" alt="Robert Fox">
+                <div class="text-start">
+                  <div class="testimonial-stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                  <h6 class="fw-bold mb-0">Robert Fox</h6>
+                  <small class="text-muted">Tourist</small>
+                </div>
+              </div>
+              <p class="text-muted mt-3">Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
+                Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
+              <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="https://i.pravatar.cc/150?img=20" alt="Kabin Martin">
+                <div class="text-start">
+                  <div class="testimonial-stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                  <h6 class="fw-bold mb-0">Kabin Martin</h6>
+                  <small class="text-muted">Tourist</small>
+                </div>
+              </div>
+              <p class="text-muted mt-3">Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
+                Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
+              <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="https://i.pravatar.cc/150?img=32" alt="Jhon Smith">
+                <div class="text-start">
+                  <div class="testimonial-stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                  <h6 class="fw-bold mb-0">Jhon Smith</h6>
+                  <small class="text-muted">Tourist</small>
+                </div>
+              </div>
+              <p class="text-muted mt-3">Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
+                Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
+              <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="https://i.pravatar.cc/150?img=32" alt="Jhon Smith">
+                <div class="text-start">
+                  <div class="testimonial-stars">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                  </div>
+                  <h6 class="fw-bold mb-0">Jhon Smith</h6>
+                  <small class="text-muted">Tourist</small>
+                </div>
+              </div>
+              <p class="text-muted mt-3">Duis rhoncus orci utedn metus rhoncus, non is dictum purus bibendum.
+                Suspendisse id orci sit amet justo interdum hendrerit sagittis.</p>
+              <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero-section2 sec-space position-relative overflow-hidden text-white">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <!-- Left content -->
+        <div class="col-lg-6 z-1 position-relative">
+          <p class="text-warning fw-bold mb-2">SPECIAL OFFER FOR YOU</p>
+          <h1 class="display-5 fw-bold text-white">Let’s Make Your Travel<br><span class="">Dreams Come
+              True</span></h1>
+          <p class="mb-4 text-white-50">There are many variations of passages of Lorem Ipsum available but the majority.
+          </p>
+          <button class="btn btn-light text-dark px-4 py-2">Start Booking</button>
+        </div>
+
+        <!-- Right image with Pexels photo -->
+        <div
+          class="discount-bubble position-absolute top-0 end-0 translate-middle rounded-circle text-center bg-warning text-dark p-2">
+          <span class="fw-bold">50%<br>Discount</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Stats  -->
+  <section class="stats-section">
+    <div class="container stat-container">
+      <div class="row g-0 text-center">
+        <div class="col-md-3 p-0">
+          <div class="stat-box">
+            <div class="icon">
+              <img src="images/icons/traveller.svg" alt="" />
+            </div>
+            <h4 class="mt-3 fw-bold">30.3k</h4>
+            <p class="text-muted">Happy Traveler</p>
+          </div>
+        </div>
+        <div class="col-md-3 p-0">
+          <div class="stat-box">
+            <div class="icon">
+              <img src="images/icons/campfire.svg" alt="" />
+            </div>
+            <h4 class="mt-3 fw-bold">40.5k</h4>
+            <p class="text-muted">Tent Sites</p>
+          </div>
+        </div>
+        <div class="col-md-3 p-0">
+          <div class="stat-box">
+            <div class="icon">
+              <img src="images/icons/satisfaction.svg" alt="" />
+            </div>
+            <h4 class="mt-3 fw-bold">88.9%</h4>
+            <p class="text-muted">Satisfaction Rate</p>
+          </div>
+        </div>
+        <div class="col-md-3 p-0">
+          <div class="stat-box border-0">
+            <div class="icon">
+              <img src="images/icons/customer-care.svg" alt="" />
+            </div>
+            <h4 class="mt-3 fw-bold">6.3+</h4>
+            <p class="text-muted">Year Of Service</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Stats  -->
+
+  <!-- Gallery  -->
+  <div class="container-fluid px-4 py-5 gallery-home">
+    <div class="row justify-content-center g-2">
+
+      <!-- Gallery Item -->
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <a class="d-block w-100" data-fancybox="gallery"
+          href="https://images.pexels.com/photos/1188813/pexels-photo-1188813.jpeg">
+          <img src="https://images.pexels.com/photos/1188813/pexels-photo-1188813.jpeg"
+            class="img-fluid rounded-circle shadow" alt="Cappadocia" />
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <a class="d-block w-100" data-fancybox="gallery"
+          href="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg">
+          <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg"
+            class="img-fluid rounded-circle shadow" alt="Beach" />
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <a class="d-block w-100" data-fancybox="gallery"
+          href="https://images.pexels.com/photos/210557/pexels-photo-210557.jpeg">
+          <img src="https://images.pexels.com/photos/210557/pexels-photo-210557.jpeg"
+            class="img-fluid rounded-circle shadow" alt="Resort" />
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <a class="d-block w-100" data-fancybox="gallery"
+          href="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg">
+          <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg"
+            class="img-fluid rounded-circle shadow" alt="Paragliding" />
+        </a>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-2 text-center">
+        <a class="d-block w-100" data-fancybox="gallery"
+          href="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg">
+          <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg"
+            class="img-fluid rounded-circle shadow" alt="Maldives" />
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Gallery  -->
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose-us position-relative">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <span class="section-subtitle"><i class="fa-duotone fa-solid fa-plane me-2"></i> WHY CHOOSE US</span>
+          <h2 class="section-title">Why You Should Choose Our Company</h2>
+          <!-- Features Grid -->
+          <div class="row g-0 rounded-5 overflow-hidden mb-4">
+            <div class="col-6 border-end border-bottom bg-white">
+              <div class="d-flex align-items-center wbox">
+                <div class="wicon"><img src="images/icons/certified.svg" alt=""></div>
+                <div>
+                  <h4 class="mb-0">Professional & Certified</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 border-bottom bg-white">
+              <div class="d-flex align-items-center wbox">
+                <div class="wicon"><img src="images/icons/best-price.svg" alt=""></div>
+                <div>
+                  <h4 class="mb-0">Best Price Guarantee</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 border-end bg-white">
+              <div class="d-flex align-items-center wbox">
+                <div class="wicon"><img src="images/icons/booking.svg" alt=""></div>
+                <div>
+                  <h4 class="mb-0">Get Instant Tour Bookings</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 bg-white">
+              <div class="d-flex align-items-center wbox">
+                <div class="wicon"><img src="images/icons/guide.svg" alt=""></div>
+                <div>
+                  <h4 class="mb-0">Experienced Guide</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-orange">Explore More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog  -->
+  <section class="sec-space bg-white">
+    <div class="container text-center">
+      <span class="badge bg-light text-primary mb-2 px-3 py-2 rounded-pill">
+        <i class="fa-solid fa-plane me-2"></i> ARTICLES
+      </span>
+      <h2 class="fw-bold mb-5 display-5">Latest News & Articles from <br> the Blog Posts</h2>
+
+      <div class="swiper swiper-blog">
+        <div class="swiper-wrapper">
+
+          <!-- Blog Card 1 -->
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-4 overflow-hidden h-100 blog-card">
+              <div class="position-relative">
+                <img src="images/blogs/blog-1.webp" class="w-100">
+                <div class="position-absolute bottom-0 post-date text-white px-3 py-1 rounded-top">
+                  <strong>04</strong> Nov
+                </div>
+              </div>
+              <div class="card-body text-start">
+                <div class="d-flex align-items-center small post-user">
+                  <i class="fa-regular fa-user me-1"></i> admin
+                  <span class="mx-2">|</span>
+                  <i class="fa-regular fa-comments me-1"></i> 0 Comments
+                </div>
+                <h6 class="fw-bold mb-3 blog-title">Top 8 Amazing Places to Stay in India</h6>
+              </div>
+              <a href="" class="fw-semibold blog-link">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+
+          <!-- Blog Card 2 -->
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-4 overflow-hidden h-100 blog-card">
+              <div class="position-relative">
+                <img src="images/blogs/blog-2.webp" class="w-100">
+                <div class="position-absolute bottom-0 post-date text-white px-3 py-1 rounded-top">
+                  <strong>04</strong> Nov
+                </div>
+              </div>
+              <div class="card-body text-start">
+                <div class="d-flex align-items-center small post-user">
+                  <i class="fa-regular fa-user me-1"></i> admin
+                  <span class="mx-2">|</span>
+                  <i class="fa-regular fa-comments me-1"></i> 0 Comments
+                </div>
+                <h6 class="fw-bold mb-3 blog-title">The surfing man will adventure your mind</h6>
+              </div>
+              <a href="" class="fw-semibold blog-link">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-4 overflow-hidden h-100 blog-card">
+              <div class="position-relative">
+                <img src="images/blogs/blog-3.webp" class="w-100">
+                <div class="position-absolute bottom-0 post-date text-white px-3 py-1 rounded-top">
+                  <strong>04</strong> Nov
+                </div>
+              </div>
+              <div class="card-body text-start">
+                <div class="d-flex align-items-center small post-user">
+                  <i class="fa-regular fa-user me-1"></i> admin
+                  <span class="mx-2">|</span>
+                  <i class="fa-regular fa-comments me-1"></i> 0 Comments
+                </div>
+                <h6 class="fw-bold mb-3 blog-title">Top 5 destinations & adventure travel</h6>
+              </div>
+              <a href="" class="fw-semibold blog-link">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+
+          <!-- Blog Card 3 -->
+          <div class="swiper-slide">
+            <div class="card border-0 rounded-4 overflow-hidden h-100 blog-card">
+              <div class="position-relative">
+                <img src="images/blogs/blog-4.webp" class="w-100">
+                <div class="position-absolute bottom-0 text-white px-3 py-1 rounded-top post-date">
+                  <strong>04</strong> Nov
+                </div>
+              </div>
+              <div class="card-body text-start">
+                <div class="d-flex align-items-center small post-user">
+                  <i class="fa-regular fa-user me-1"></i> admin
+                  <span class="mx-2">|</span>
+                  <i class="fa-regular fa-comments me-1"></i> 0 Comments
+                </div>
+                <h6 class="fw-bold mb-3 blog-title">Top 5 destinations & adventure travel</h6>
+              </div>
+              <a href="" class="fw-semibold blog-link">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+          </div>
+
+          <!-- Add more slides if needed -->
+
+        </div>
+
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog  -->
+  <!-- Promo Section -->
+  <section class="bg-white">
+    <div class="container">
+      <!-- <div class="row g-4 justify-content-center text-white">
+        <div class="col-md-6">
+          <div class="bg-primary p-4 p-md-5 rounded-4 d-flex align-items-center" style="min-height: 220px;">
+            <div>
+              <p class="mb-1 small">Special offer</p>
+              <h5 class="fw-bold">Book Your Adventure Today!</h5>
+              <a href="#" class="btn btn-warning mt-3 text-white fw-semibold px-4 py-2">Book Now</a>
+            </div>
+            <img src="https://images.pexels.com/photos/1153650/pexels-photo-1153650.jpeg"
+              class="img-fluid rounded-circle ms-auto d-none d-md-block"
+              style="height: 120px; width: 120px; object-fit: cover;">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-warning text-dark p-4 p-md-5 rounded-4 d-flex align-items-center" style="min-height: 220px;">
+            <div>
+              <p class="mb-1 small">Special offer</p>
+              <h5 class="fw-bold">Pack Your Bags and Go!</h5>
+              <a href="#" class="btn btn-light mt-3 fw-semibold px-4 py-2">Book Now</a>
+            </div>
+            <img src="https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg"
+              class="img-fluid rounded-circle ms-auto d-none d-md-block"
+              style="height: 120px; width: 120px; object-fit: cover;">
+          </div>
+        </div>
+      </div> -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="" class="add-bannner d-block w-100"><img class="img-fluid" src="images/add/add-banner-2.webp"
+              alt=""></a>
+        </div>
+        <div class="col-lg-6">
+          <a href="" class="add-bannner d-block w-100"><img class="img-fluid" src="images/add/add-banner.jpg"
+              alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white sec-space pb-0" style="background-color: #251200;">
+    <div class="container">
+      <div class="row align-items-start g-4">
+        <!-- Logo & Social -->
+        <div class="col-md-12">
+          <div class="d-flex align-items-center justify-content-between footer-top">
+            <div class="logo">
+              <img src="images/logo.png" alt="">
+            </div>
+            <div class="social-media d-flex gap-2">
+              <a href="#" class="text-white d-inline-block me-2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white d-inline-block me-2">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="#" class="text-white d-inline-block me-2">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-white d-inline-block">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="col-md-2 quick-link">
+          <h5 class="fw-bold mb-3">Tours</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Domestic Tour</a></li>
+            <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Adventure Tour</a></li>
+            <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Educational Tour</a></li>
+            <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Historical Tour</a></li>
+            <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Office Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Explore Links -->
+        <div class="col-md-2 quick-link">
+          <h5 class="fw-bold mb-3">Explore</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3"><a href="about.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree"></i> About</a></li>
+            <li class="mb-3"><a href="image-gallery.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Image
+                Gallery</a></li>
+            <li class="mb-3"><a href="video-gallery.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Video
+                Gallery</a></li>
+            <li class="mb-3"><a href="blogs.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Latest News</a>
+            </li>
+            <li class="mb-3"><a href="contact.html" class="text-decoration-none d-block mb-1"><i
+                  class="fa-sharp fa-solid fa-tree me-2"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-4 contact-footer">
+          <h5 class="fw-bold mb-3">Contact</h5>
+          <a href="https://maps.app.goo.gl/GnkgUzHHfmc7b66m9" class="mb-3 d-block"><i
+              class="fas fa-location-dot text-warning me-2"></i>Ramkrishnapur Md. K C Road,
+            Kolkata 700111, West Bengal, India</a>
+          <a href="tel:8240086098" class="mb-3 d-block">
+            <i class="fas fa-phone text-warning me-2"></i>+91 82400 86098
+          </a>
+          <a href="tel:8583899808" class="mb-3 d-block">
+            <i class="fas fa-phone text-warning me-2"></i>+91 85838 99808
+          </a>
+          <a href="mailto:admin@travelbondhu.com" class="d-block">
+            <i class="fas fa-envelope text-warning me-2"></i>admin@travelbondhu.com
+          </a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-4">
+          <div class="bg-dark p-4 rounded-4">
+            <h6 class="text-white mb-3">Signup for our latest news<br />& articles</h6>
+            <form>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email address" required />
+                <button class="btn btn-warning" type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="privacy" required>
+                <label class="form-check-label small text-white" for="privacy">
+                  <i class="fas fa-check-circle text-warning me-1"></i>I agree to the privacy policy.
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="copy-right">
+      All right Resrved.
+    </div>
+  </footer>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/fancybox.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>

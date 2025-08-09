@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours - Travel Bandhu</title>
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <!-- Font  -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fancybox.css" />
+
+    <!-- Fontawesome link  -->
+    <link rel="stylesheet" href="css/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-light.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-regular.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-solid.css" />
+    <link rel="stylesheet" href="css/fontawesome/css/sharp-thin.css" />
+    <!-- Fontawesome link  -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Header Start  -->
+    <!-- Topbar -->
+    <div class="topbar py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <i class="fa-solid fa-location-dot me-1"></i> 30 Road Fratton, India
+                <span class="mx-2">|</span>
+                <i class="fa-solid fa-envelope me-1"></i> contact@example.com
+            </div>
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook-f ms-3"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter ms-2"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram ms-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-travel navbar-expand-lg bg-white shadow-sm p-0">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="logo" width="100" class="me-2" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tours</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="tours.html">Domestic Tour</a></li>
+                            <li><a class="dropdown-item" href="tours.html">Adventure Tour</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Activities</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="image-gallery.html">Image Gallery</a></li>
+                            <li><a class="dropdown-item" href="video-gallery.html">Video Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="blogs.html">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <!-- Right side -->
+                <div class="d-flex align-items-center gap-3">
+                    <div class="call-box">
+                        <div class="call-icon">
+                            <i class="fa-regular fa-phone-volume"></i>
+                        </div>
+                        <div>
+                            <small>Call Anytime</small><br />
+                            <strong>(69)-868 168</strong>
+                        </div>
+                    </div>
+                    <a href="#" class="search-icon" data-bs-toggle="modal" data-bs-target="#searchModal">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+                    <button class="btn btn-booking" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                        <i class="fa-light fa-calendar-days me-2"></i>Start Booking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black bg-opacity-75 text-white border-0">
+                <div class="modal-body p-0 d-flex">
+                    <!-- Left Side: Image -->
+                    <div class="w-50 d-none d-md-block">
+                        <img src="https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                            alt="Travel" class="img-fluid h-100 w-100 object-fit-cover" />
+                    </div>
+
+                    <!-- Right Side: Booking Form -->
+                    <div class="w-100 w-md-50 bg-white text-dark p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="mb-0">Booking Form</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="John Doe" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="email@example.com" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Phone</label>
+                                <input type="text" class="form-control" placeholder="+123456789" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Travel Date</label>
+                                <input type="date" class="form-control" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Destination</label>
+                                <input type="text" class="form-control" placeholder="e.g., Bali, Paris" />
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent text-white border-0">
+                <div class="modal-body p-5">
+                    <div class="mb-4">
+                        <h4 class="mb-0 text-center form-head">Search Destinations</h4>
+                        <button type="button" class="btn-close btn-close-cs" data-bs-dismiss="modal"
+                            aria-label="Close">Close</button>
+                    </div>
+
+                    <form>
+                        <div class="mb-4 position-relative overflow-hidden">
+                            <input type="text" id="search" class="form-control form-search form-control-lg"
+                                placeholder="Enter destination name..." />
+                            <button type="submit" class="btn position-absolute right-0 search-button">Search</button>
+                        </div>
+                    </form>
+
+                    <!-- Swiper -->
+                    <div class="swiper destination-slider2 mt-4">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1: Goa -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/871060/pexels-photo-871060.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Goa" />
+                                </div>
+                                <p class="mt-2 text-white">Goa</p>
+                            </div>
+
+                            <!-- Slide 2: Jaipur -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Jaipur" />
+                                </div>
+                                <p class="mt-2 text-white">Jaipur</p>
+                            </div>
+
+                            <!-- Slide 3: Manali -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1188172/pexels-photo-1188172.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Manali" />
+                                </div>
+                                <p class="mt-2 text-white">Manali</p>
+                            </div>
+
+                            <!-- Slide 4: Leh-Ladakh -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/2087391/pexels-photo-2087391.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Leh-Ladakh" />
+                                </div>
+                                <p class="mt-2 text-white">Leh-Ladakh</p>
+                            </div>
+
+                            <!-- Slide 5: Kerala -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1007424/pexels-photo-1007424.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Kerala" />
+                                </div>
+                                <p class="mt-2 text-white">Kerala</p>
+                            </div>
+
+                            <!-- Slide 6: Varanasi -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1829980/pexels-photo-1829980.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Varanasi" />
+                                </div>
+                                <p class="mt-2 text-white">Varanasi</p>
+                            </div>
+
+                            <!-- Slide 7: Rishikesh -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Rishikesh" />
+                                </div>
+                                <p class="mt-2 text-white">Rishikesh</p>
+                            </div>
+
+                            <!-- Slide 8: Agra -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1487009/pexels-photo-1487009.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Agra" />
+                                </div>
+                                <p class="mt-2 text-white">Agra</p>
+                            </div>
+
+                            <!-- Slide 9: Udaipur -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/1829985/pexels-photo-1829985.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Udaipur" />
+                                </div>
+                                <p class="mt-2 text-white">Udaipur</p>
+                            </div>
+
+                            <!-- Slide 10: Darjeeling -->
+                            <div class="swiper-slide text-center">
+                                <div class="destination-thumb">
+                                    <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                        alt="Darjeeling" />
+                                </div>
+                                <p class="mt-2 text-white">Darjeeling</p>
+                            </div>
+                        </div>
+
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End  -->
+
+    <!-- Inner Banner Start  -->
+    <section class="cms-banner position-relative">
+        <div class="cms-bann-img position-relative">
+            <img src="images/breadcrumb.jpg" alt="Inner Banner">
+        </div>
+        <div class="breadcrumb-cover py-3">
+            <div class="container">
+                <h1>Jaldapara</h1>
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-divider"><i class="fa-regular fa-chevron-right"></i></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Jaldapara </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Inner Banner End  -->
+
+    <section class="single-tour sec-space pt-0 mt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Tour Image -->
+                <div class="col-md-12">
+                    <div class="grid-box">
+                        <div class="grid-container">
+                            <!-- First Grid Item (Featured Image) -->
+                            <div class="grid-item item-1">
+                                <img src="images/gallery/gi-11.webp" alt="Goa" class="img-fluid">
+                                <a href="images/gallery/gi-12.webp" class="image-link" data-fancybox="gallery"><span><i
+                                            class="fa-light fa-eye"></i></span></a>
+                            </div>
+                            <!-- Second Grid Item (grid_2) -->
+                            <div class="grid-item item-2">
+                                <img src="images/gallery/gi-7.webp" alt="Image 2" class="img-fluid">
+                                <a href="images/gallery/gi-7.webp" class="image-link" data-fancybox="gallery"><span><i
+                                            class="fa-light fa-eye"></i></span></a>
+                            </div>
+                            <!-- Third Grid Item (grid_3) -->
+                            <div class="grid-item item-3">
+                                <img src="images/gallery/gi-8.webp" alt="Image 3" class="img-fluid">
+                                <a href="images/gallery/gi-8.webp" class="image-link" data-fancybox="gallery"><span><i
+                                            class="fa-light fa-eye"></i></span></a>
+                            </div>
+                            <!-- Fourth Grid Item (grid_4) -->
+                            <div class="grid-item item-4">
+                                <img src="images/gallery/gi-9.webp" alt="Image 4" class="img-fluid">
+                                <a href="images/gallery/gi-9.webp" class="image-link" data-fancybox="gallery"><span><i
+                                            class="fa-light fa-eye"></i></span></a>
+                            </div>
+                            <!-- Fifth Grid Item (Video) -->
+                            <div class="grid-item item-5">
+                                <img src="images/gallery/gi-4.webp" alt="Video Thumbnail" class="img-fluid">
+                                <a href="https://www.youtube.com/watch?v=8nEJ_sci9CQ" class="video-link flex-wrap"
+                                    data-fancybox="gallery" data-caption="Click to watch the video">
+                                    <span class="d-block text-center me-2"><i
+                                            class="fa-sharp fa-light fa-circle-play"></i></span>
+                                    <span class="d-block text-center text-uppercase">Watch Video</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mt-lg-5 mt-md-4 mt-3">
+                    <!-- Tour Details Section -->
+
+                    <!-- Tour Description -->
+                    <div class="tour-description tour-common">
+                        <div class="tour-box-title">
+                            <h3>Explore the Vibrance of Goa</h3>
+                        </div>
+                        <p>Sun-kissed beaches, swaying palms, Portuguese heritage, electrifying nightlife, vibrant flea
+                            markets, and soulful sunsets—Goa is an experience that touches every traveler differently.
+                            Whether you're chasing tranquility on a hidden beach, adventure on the Arabian Sea, or
+                            culture in the old quarters of Panjim and Fontainhas, Goa offers a delightful fusion of
+                            leisure and excitement.</p>
+                        <p>From family-friendly beach outings and romantic escapades to thrill-seeking water sports and
+                            cultural discoveries—Goa promises something special for families, couples, solo travelers,
+                            and adventure seekers alike.</p>
+                    </div>
+
+                    <div class="tour-attraction tour-common">
+                        <div class="tour-box-title">
+                            <h3>Best Tourist Attractions / Must-Visit Places in Goa</h3>
+                        </div>
+                        <ul class="list-unstyled m-0">
+                            <li><strong>North Goa:</strong> Baga Beach, Calangute Beach, Anjuna Beach, Chapora Fort,
+                                Aguada Fort, Saturday
+                                Night Market</li>
+
+                            <li><strong>South Goa:</strong> Palolem Beach, Colva Beach, Cabo de Rama Fort, Butterfly
+                                Beach</li>
+                            <li><strong>Old Goa:</strong> Basilica of Bom Jesus, Se Cathedral, Church of Our Lady of the
+                                Immaculate
+                                Conception</li>
+                            <li><strong>Fontainhas Latin Quarter:</strong> Colourful Portuguese-style houses and walking
+                                tours</li>
+                            <li><strong>Dudhsagar Waterfalls:</strong> A four-tiered waterfall nestled in the Western
+                                Ghats</li>
+                            <li><strong>Spice Plantations:</strong> Organic farms showcasing traditional spice
+                                cultivation</li>
+                            <li><strong>Water Sports:</strong> Parasailing, Jet Skiing, Banana Boat Rides, Scuba Diving
+                            </li>
+                            <li><strong>River Cruise</strong> on Mandovi River at sunset</li>
+                        </ul>
+                    </div>
+
+                    <div class="tour-duration  tour-common">
+                        <div class="tour-box-title">
+                            <h3>Tour Package Duration Options</h3>
+                        </div>
+                        <p>Aaditya Global Tourism offers flexible travel durations with custom itineraries tailored to
+                            your travel style:</p>
+                        <ul>
+                            <li>2 Nights / 3 Days</li>
+                            <li>3 Nights / 4 Days</li>
+                            <li>4 Nights / 5 Days</li>
+                        </ul>
+                        <p class="note">Note: We do not offer fixed prices online. Instead, we create tailor-made travel
+                            experiences
+                            based on your budget, preferences, and travel goals. Simply submit your query and let our
+                            experts design a personalized itinerary for you.</p>
+                    </div>
+
+                    <div class="tour-itenary-summary tour-common mt-4">
+                        <div class="accordion" id="goaItinerarySummary">
+                            <!-- 2N/3D Tour -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading2n3d">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse2n3d" aria-expanded="true"
+                                        aria-controls="collapse2n3d">
+                                        2N/3D Goa Tour
+                                    </button>
+                                </h2>
+                                <div id="collapse2n3d" class="accordion-collapse collapse show"
+                                    aria-labelledby="heading2n3d" data-bs-parent="#goaItinerarySummary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Day 1:</strong> Arrival in Goa – Explore North Goa Beaches</li>
+                                            <li><strong>Day 2:</strong> Sightseeing – Aguada Fort, Chapora, Cruise Ride
+                                            </li>
+                                            <li><strong>Day 3:</strong> Leisure morning – Departure</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 3N/4D Tour -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading3n4d">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse3n4d" aria-expanded="false"
+                                        aria-controls="collapse3n4d">
+                                        3N/4D Goa Tour
+                                    </button>
+                                </h2>
+                                <div id="collapse3n4d" class="accordion-collapse collapse" aria-labelledby="heading3n4d"
+                                    data-bs-parent="#goaItinerarySummary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Day 1:</strong> Arrival – North Goa Beaches &amp; Fort</li>
+                                            <li><strong>Day 2:</strong> South Goa Sightseeing</li>
+                                            <li><strong>Day 3:</strong> Old Goa Churches, Fontainhas Walk</li>
+                                            <li><strong>Day 4:</strong> Spice Farm or optional Dudhsagar trip –
+                                                Departure</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 4N/5D Tour -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4n5d">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse4n5d" aria-expanded="false"
+                                        aria-controls="collapse4n5d">
+                                        4N/5D Goa Tour
+                                    </button>
+                                </h2>
+                                <div id="collapse4n5d" class="accordion-collapse collapse" aria-labelledby="heading4n5d"
+                                    data-bs-parent="#goaItinerarySummary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li><strong>Day 1:</strong> Arrival &amp; Relaxation</li>
+                                            <li><strong>Day 2:</strong> North Goa Beaches + Nightlife</li>
+                                            <li><strong>Day 3:</strong> South Goa Highlights</li>
+                                            <li><strong>Day 4:</strong> Dudhsagar Waterfall Excursion</li>
+                                            <li><strong>Day 5:</strong> Heritage Walk + Cruise + Departure</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tour-detailed-itenary tour-common mt-4">
+                        <h5>3N/4D Tour Details</h5>
+                        <div class="accordion" id="goaDetailedItinerary">
+                            <!-- Day 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="day1Heading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#day1" aria-expanded="true" aria-controls="day1">
+                                        Day 1: Arrival – North Goa Exploration
+                                    </button>
+                                </h2>
+                                <div id="day1" class="accordion-collapse collapse show" aria-labelledby="day1Heading"
+                                    data-bs-parent="#goaDetailedItinerary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Arrival at Goa Airport/Railway Station</li>
+                                            <li>Hotel Check-in and welcome drink</li>
+                                            <li>Visit to Calangute, Baga &amp; Anjuna Beaches</li>
+                                            <li>Enjoy sunset at Chapora Fort</li>
+                                            <li>Optional beach shack dinner or party night</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Day 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="day2Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#day2" aria-expanded="false" aria-controls="day2">
+                                        Day 2: South Goa Discovery
+                                    </button>
+                                </h2>
+                                <div id="day2" class="accordion-collapse collapse" aria-labelledby="day2Heading"
+                                    data-bs-parent="#goaDetailedItinerary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Visit to Colva and Palolem Beach</li>
+                                            <li>Explore Cabo de Rama Fort and Butterfly Beach</li>
+                                            <li>Sunset view from Dona Paula Jetty</li>
+                                            <li>Return to hotel for overnight stay</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Day 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="day3Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#day3" aria-expanded="false" aria-controls="day3">
+                                        Day 3: Culture &amp; Cruise
+                                    </button>
+                                </h2>
+                                <div id="day3" class="accordion-collapse collapse" aria-labelledby="day3Heading"
+                                    data-bs-parent="#goaDetailedItinerary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Morning visit to Basilica of Bom Jesus &amp; Se Cathedral</li>
+                                            <li>Fontainhas Heritage Walk (optional guided tour)</li>
+                                            <li>Visit a spice plantation with Goan lunch (optional)</li>
+                                            <li>Sunset Cruise on Mandovi River (with local music &amp; dance)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Day 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="day4Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#day4" aria-expanded="false" aria-controls="day4">
+                                        Day 4: Departure
+                                    </button>
+                                </h2>
+                                <div id="day4" class="accordion-collapse collapse" aria-labelledby="day4Heading"
+                                    data-bs-parent="#goaDetailedItinerary">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Leisure breakfast at the hotel</li>
+                                            <li>Free time for shopping or beach stroll</li>
+                                            <li>Check-out and transfer to Airport/Railway Station</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tour-time tour-common">
+                        <div class="tour-box-title">
+                            <h3>Best Time to Book the Goa Tour</h3>
+                        </div>
+                        <ul>
+                            <li>Peak Season: November to February (pleasant weather, festivals, perfect beach time)</li>
+                            <li>Off-Season (Monsoon Magic): June to September (lush greenery, fewer crowds,
+                                budget-friendly)</li>
+                            <li>Summer: March to May (hot &amp; humid, but great for nightlife and water sports
+                                enthusiasts)</li>
+                        </ul>
+                        <h5>Month-Wise Climate Overview (Avg. Temperatures)</h5>
+                        <table class="table table-bordered climate-table">
+                            <thead>
+                                <tr>
+                                    <th>Month</th>
+                                    <th>Min Temp (°C)</th>
+                                    <th>Max Temp (°C)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>January</td>
+                                    <td>19</td>
+                                    <td>31</td>
+                                </tr>
+                                <tr>
+                                    <td>February</td>
+                                    <td>21</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>March</td>
+                                    <td>24</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>April</td>
+                                    <td>26</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>May</td>
+                                    <td>27</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>June–September</td>
+                                    <td>24</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>October</td>
+                                    <td>23</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>November</td>
+                                    <td>21</td>
+                                    <td>33</td>
+                                </tr>
+                                <tr>
+                                    <td>December</td>
+                                    <td>20</td>
+                                    <td>32</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                    <div class="tour-why tour-common">
+                        <div class="tour-box-title">
+                            <h3>Why Choose Aaditya Global Tourism for Your Goa Trip?</h3>
+                        </div>
+                        <ul>
+                            <li>Personalized trip planning based on your budget, group size, and interests</li>
+                            <li>Trusted network of vetted hotels, local guides, and experiences</li>
+                            <li>Transparent communication and no hidden charges</li>
+                            <li>Available for last-minute queries and travel assistance</li>
+                            <li>We listen to your needs and design a holiday that feels like it’s truly yours
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tour-tips tour-common">
+                        <div class="tour-box-title">
+                            <h3>Top Travel Tips</h3>
+                        </div>
+                        <ul>
+                            <li>Documents to Carry: Valid government ID, flight/train tickets, Aadhaar/Passport,
+                                vaccination certificate (if any)</li>
+                            <li>Best Experiences:
+                                <ul>
+                                    <li>Party at Tito’s Lane (Baga)</li>
+                                    <li>Candlelight beach dinner</li>
+                                    <li>Try Goan seafood – Prawn curry, Bebinca, Xacuti</li>
+                                    <li>Early morning dolphin watching tour</li>
+                                    <li>Spice plantation walk with Goan thali lunch</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tour-do-dont tour-common">
+                        <div class="tour-box-title">
+                            <h3>Dos and Don’ts</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="tour-do">
+                                    <h5>Do's</h5>
+                                    <ul>
+                                        <li>Respect local culture, especially in churches</li>
+                                        <li>Stay hydrated in summer</li>
+                                        <li>Use reef-safe sunscreen</li>
+                                        <li>Explore responsibly – keep beaches clean</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="tour-dont">
+                                    <h5>Don'ts</h5>
+                                    <ul>
+                                        <li>Don’t photograph locals without permission</li>
+                                        <li>Avoid excessive partying in residential areas</li>
+                                        <li>Don’t litter beaches or heritage sites</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-include-exclude tour-common">
+                        <div class="tour-box-title">
+                            <h3>Package Inclusions &amp; Exclusions</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="package-includes">
+                                    <h5>Inclusions (Based on Customized Package)</h5>
+                                    <ul class="list-unstyled">
+                                        <li>✔️ Hotel accommodation (budget to luxury)</li>
+                                        <li>✔️ Breakfast (and dinner if included by hotel)</li>
+                                        <li>✔️ Sightseeing as per itinerary</li>
+                                        <li>✔️ Pick-up/drop from airport or railway station (on request)</li>
+                                        <li>✔️ Tour coordinator (available on call)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="package-excludes">
+                                    <h5>Exclusions</h5>
+                                    <ul class="list-unstyled">
+                                        <li>❌ Transportation to/from Goa (but can be arranged)</li>
+                                        <li>❌ Personal expenses, meals not specified</li>
+                                        <li>❌ Entry fees, adventure activities, cruise ticket (payable onsite)</li>
+                                        <li>❌ Travel insurance</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tour-attraction tour-common">
+                        <div class="tour-box-title">
+                            <h3>Popular Festivals in Goa</h3>
+                        </div>
+                        <ul class="list-unstyled m-0">
+                            <li><strong>Goa Carnival (Feb–March):</strong> Free street parade with floats and music</li>
+                            <li><strong>Sunburn Festival (December):</strong> Ticketed EDM fest at Vagator</li>
+                            <li><strong>Shigmo Festival (March):</strong> Colourful processions &amp; folk dances</li>
+                            <li><strong>Feast of St. Francis Xavier (December):</strong> Religious celebration in Old
+                                Goa</li>
+                        </ul>
+                    </div>
+
+                    <div class="tour-attraction tour-common">
+                        <div class="tour-box-title">
+                            <h3>Entry Fees (Indicative)</h3>
+                        </div>
+                        <ul class="list-unstyled m-0">
+                            <li><strong>Chapora &amp; Aguada Fort:</strong> Free</li>
+                            <li><strong>Basilica of Bom Jesus:</strong> Free</li>
+                            <li><strong>Dudhsagar Jeep Safari:</strong> Approx ₹500–₹800 per person</li>
+                            <li><strong>Mandovi River Cruise:</strong> ₹400–₹600</li>
+                            <li><strong>Spice Plantation Visit with Lunch:</strong> ₹500–₹700</li>
+                        </ul>
+                    </div>
+
+                    <div class="tour-faq tour-common">
+                        <div class="tour-box-title">
+                            <h3>Frequently Asked Questions</h3>
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq1-heading">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                            Q. What is the best time to visit Goa?
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse show"
+                                        aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            A. November to February offers the best weather and beach experiences.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq2-heading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false"
+                                            aria-controls="faq2">
+                                            Q. Is Goa family-friendly?
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            A. Absolutely! South Goa, in particular, is calm and ideal for families.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq3-heading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false"
+                                            aria-controls="faq3">
+                                            Q. Do I need to book water sports in advance?
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            A. Not necessarily. Most activities are available on spot, but pre-booking
+                                            is
+                                            helpful during peak season.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="faq4-heading">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false"
+                                            aria-controls="faq4">
+                                            Q. Can Aaditya Global Tourism help with flight bookings?
+                                        </button>
+                                    </h2>
+                                    <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading"
+                                        data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            A. Yes, our travel experts can assist with both domestic and international
+                                            flights upon request.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-lg-5 mt-md-4 mt-3">
+                    <!-- Booking Form Section -->
+                    <div class="query-form">
+                        <h4>Let's Talk</h4>
+                        <form action="" method="post" class="" aria-label="Contact form" data-status="init">
+                            <div class="single-input mb-3">
+                                <input type="text" class="form-control" id="" placeholder="Your Name">
+                            </div>
+                            <div class="single-input mb-3">
+                                <input type="text" class="form-control" id="" placeholder="Email Address">
+                            </div>
+                            <div class="single-input mb-3">
+                                <input type="text" class="form-control" id="" placeholder="Phone Number">
+                            </div>
+                            <div class="single-input mb-3">
+                                <input type="text" class="form-control" id="" placeholder="Subjesct">
+                            </div>
+                            <div class="single-input mb-3">
+                                <textarea name="" class="form-control" id=""></textarea>
+                            </div>
+                            <div class="single-input">
+                                <button class="btn btn-solid bg-dark text-white w-100">Enquire Now</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="vertical-add">
+                        <img src="images/vertical-add-2.webp" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-white sec-space pb-0" style="background-color: #251200;">
+        <div class="container">
+            <div class="row align-items-start g-4">
+                <!-- Logo & Social -->
+                <div class="col-md-12">
+                    <div class="d-flex align-items-center justify-content-between footer-top">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                        </div>
+                        <div class="social-media d-flex gap-2">
+                            <a href="#" class="text-white d-inline-block me-2">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="text-white d-inline-block me-2">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="text-white d-inline-block me-2">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-white d-inline-block">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Company Links -->
+                <div class="col-md-2 quick-link">
+                    <h5 class="fw-bold mb-3">Tours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Domestic Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Adventure Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Educational Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Historical Tour</a></li>
+                        <li class="mb-3"><a href="tours.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Office Tour</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore Links -->
+                <div class="col-md-2 quick-link">
+                    <h5 class="fw-bold mb-3">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="about.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree"></i> About</a></li>
+                        <li class="mb-3"><a href="image-gallery.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Image
+                                Gallery</a></li>
+                        <li class="mb-3"><a href="video-gallery.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Video
+                                Gallery</a></li>
+                        <li class="mb-3"><a href="blogs.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Latest News</a>
+                        </li>
+                        <li class="mb-3"><a href="contact.html" class="text-decoration-none d-block mb-1"><i
+                                    class="fa-sharp fa-solid fa-tree me-2"></i> Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-4 contact-footer">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <a href="https://maps.app.goo.gl/GnkgUzHHfmc7b66m9" class="mb-3 d-block"><i
+                            class="fas fa-location-dot text-warning me-2"></i>Ramkrishnapur Md. K C Road,
+                        Kolkata 700111, West Bengal, India</a>
+                    <a href="tel:8240086098" class="mb-3 d-block">
+                        <i class="fas fa-phone text-warning me-2"></i>+91 82400 86098
+                    </a>
+                    <a href="tel:8583899808" class="mb-3 d-block">
+                        <i class="fas fa-phone text-warning me-2"></i>+91 85838 99808
+                    </a>
+                    <a href="mailto:admin@travelbondhu.com" class="d-block">
+                        <i class="fas fa-envelope text-warning me-2"></i>admin@travelbondhu.com
+                    </a>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-4">
+                    <div class="bg-dark p-4 rounded-4">
+                        <h6 class="text-white mb-3">Signup for our latest news<br />& articles</h6>
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" placeholder="Email address" required />
+                                <button class="btn btn-warning" type="submit">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="privacy" required>
+                                <label class="form-check-label small text-white" for="privacy">
+                                    <i class="fas fa-check-circle text-warning me-1"></i>I agree to the privacy policy.
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy-right">
+            All right Resrved.
+        </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fancybox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
